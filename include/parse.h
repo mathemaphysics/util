@@ -22,6 +22,8 @@ int parse_read_ranges( char *, int *** );
 
 long parse_read_ranges_long( char *, long *** );
 
+void print_usage_line( char *, char *, char * );
+
 typedef struct snode
 {
 	int id;

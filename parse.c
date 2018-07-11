@@ -323,6 +323,32 @@ long parse_read_ranges_long( char *str_in, long ***range_out )
     return cnfr;
 }
 
+/**
+ * This function prints out a formatted line describing
+ * the function of interest; it takes the flag name, the
+ * value of that flag, if it has one, and the description
+ * of the flag variable
+ *
+ * @param flag The string representing the flag, i.e. "-f"
+ * @param val  The value of the flag's variable
+ * @param desc Description of the variable's meaning
+ */
+void print_usage_line( char *flag, char *val, char *desc )
+{
+    int fw_flag = 5;
+    int fw_val  = 12;
+    int fw_desc = 50;
+    int cnt;
+    char tmp[128] = "";
+    char ump[128] = "";
+    snprintf( ump, (size_t) 127, "%+*s", fw_val, val );
+    for(cnt=0;cnt<strlen(desc);cnt+=fw_desc)
+    {
+        snprintf( tmp, (size_t) 127, "%-*s", fw_desc, desc + cnt );
+        printf( " %*s %+*s %*s\n", fw_flag, (cnt==0 ? flag : ""), fw_val, (cnt==0 ? ump : ""), fw_desc, tmp );
+    }
+}
+
 //typedef struct snode
 //{
 //	int id;
