@@ -22,6 +22,16 @@ int parse_read_ranges( char *, int *** );
 
 long parse_read_ranges_long( char *, long *** );
 
+/**
+ * This function prints out a formatted line describing
+ * the function of interest; it takes the flag name, the
+ * value of that flag, if it has one, and the description
+ * of the flag variable
+ *
+ * @param flag The string representing the flag, i.e. "-f"
+ * @param val  The value of the flag's variable
+ * @param desc Description of the variable's meaning
+ */
 void print_usage_line( char *, char *, char * );
 
 typedef struct snode
