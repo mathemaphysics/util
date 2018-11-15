@@ -64,7 +64,7 @@ long int binomial_long( long int n_in, long int k_in )
 	if( n_in < k_in )
 		return 0;
 	else
-		return truncfact( n_in, k_in ) / factorial( k_in );
+		return truncfact_long( n_in, k_in ) / factorial_long( k_in );
 }
 
 /**
