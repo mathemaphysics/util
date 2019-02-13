@@ -6,6 +6,7 @@
 int polynomial_exponents( int, int, int, int * );
 long int polynomial_exponents_long( long int, long int, long int, long int * );
 int truncfact( int, int );
+long int truncfact_long( long int, long int );
 
 /**
  * This is the standard factorial function. Improvement can certainly be made
