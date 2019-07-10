@@ -1,7 +1,7 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ(2.59)
+AC_PREREQ(2.65)
 AC_INIT(util, 0.1, ryan-p-daly@uiowa.edu)
 AM_INIT_AUTOMAKE([])
 AC_CONFIG_SRCDIR([symtab.c])
