@@ -139,7 +139,7 @@ libutil_a_AR = $(AR) $(ARFLAGS)
 libutil_a_LIBADD =
 am_libutil_a_OBJECTS = parse.$(OBJEXT) symtab.$(OBJEXT) \
 	cfgread.$(OBJEXT) graph.$(OBJEXT) combinadic.$(OBJEXT) \
-	trees.$(OBJEXT) mpifmtout.$(OBJEXT)
+	trees.$(OBJEXT)
 libutil_a_OBJECTS = $(am_libutil_a_OBJECTS)
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
@@ -311,8 +311,8 @@ top_srcdir = @top_srcdir@
 AM_CFLAGS = -I$(srcdir)/include
 EXTRA_DIST = examples/mpiexample.c
 lib_LIBRARIES = libutil.a
-include_HEADERS = include/combinadic.h include/parse.h include/trees.h include/symtab.h include/utildefs.h include/graph.h include/cfgread.h include/fmtout.h include/mpifmtout.h include/types.h include/codes.h
-libutil_a_SOURCES = parse.c symtab.c cfgread.c graph.c combinadic.c trees.c mpifmtout.c
+include_HEADERS = include/combinadic.h include/parse.h include/trees.h include/symtab.h include/utildefs.h include/graph.h include/cfgread.h include/types.h include/codes.h
+libutil_a_SOURCES = parse.c symtab.c cfgread.c graph.c combinadic.c trees.c
 all: config.h
 	$(MAKE) $(AM_MAKEFLAGS) all-am
 
@@ -414,7 +414,6 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/cfgread.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/combinadic.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/graph.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mpifmtout.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/parse.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/symtab.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/trees.Po@am__quote@
