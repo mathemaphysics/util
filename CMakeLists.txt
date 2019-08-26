@@ -27,7 +27,7 @@ add_subdirectory(doc)
 
 # Install the configuration header
 install (
-    FILES "${PROJECT_SOURCE_DIR}/util_config.h"
+    FILES "${PROJECT_BINARY_DIR}/util_config.h"
     DESTINATION "${PROJECT_SOURCE_DIR}"
     )
 
