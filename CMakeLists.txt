@@ -12,11 +12,14 @@ add_library(util parse.c symtab.c cfgread.c graph.c combinadic.c trees.c)
 
 # Search source directory for compile headers
 include_directories("${PROJECT_SOURCE_DIR}")
+include_directories("${PROJECT_SOURCE_DIR}/include")
+include_directories("${PROJECT_BINARY_DIR}")
+include_directories("${PROJECT_BINARY_DIR}/include")
 
 # Configure the project header
 configure_file (
 	"${PROJECT_SOURCE_DIR}/util_config.h.in"
-	"${PROJECT_BINARY_DIR}/util_config.h"
+    "${PROJECT_BINARY_DIR}/util_config.h"
 	)
 
 # Build the documentation (Sphinx, Doxygen)
@@ -25,7 +28,7 @@ add_subdirectory(doc)
 # Install the configuration header
 install (
     FILES "${PROJECT_SOURCE_DIR}/util_config.h"
-    DESTINATION include
+    DESTINATION "${PROJECT_SOURCE_DIR}"
     )
 
 # Install everything and headers
