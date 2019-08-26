@@ -8,7 +8,7 @@ option (OPENMPI
 	"Turn on MPI functions"
 	OFF)
 
-add_library(util parse.c symtab.c cfgread.c graph.c combinadic.c trees.c fmtout.c mpifmtout.c)
+add_library(util parse.c symtab.c cfgread.c graph.c combinadic.c trees.c)
 
 # Search source directory for compile headers
 include_directories("${PROJECT_SOURCE_DIR}")
