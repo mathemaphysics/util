@@ -26,5 +26,5 @@ AC_PROG_RANLIB
 AC_FUNC_MALLOC
 AC_FUNC_REALLOC
 AC_CHECK_FUNCS([bzero memmove])
-AC_CONFIG_FILES( [Makefile test/Makefile examples/Makefile util.pc] )
+AC_CONFIG_FILES( [Makefile util.pc] )
 AC_OUTPUT
