@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "config.h"
+#include "util_config.h"
 
 int polynomial_exponents( int, int, int, int * );
 long int polynomial_exponents_long( long int, long int, long int, long int * );

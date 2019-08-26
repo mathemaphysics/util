@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "config.h"
+#include "util_config.h"
 
 #define GRAPH_INCREMENT 16
 

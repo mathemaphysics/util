@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "config.h"
+#include "util_config.h"
 
 #define LIST_SIZE_INC 20
 

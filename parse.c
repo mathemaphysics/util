@@ -5,7 +5,7 @@
 #include <math.h>
 #include "parse.h"
 #include "utildefs.h"
-#include "config.h"
+#include "util_config.h"
 
 #define MAX_WHITE_SPACE 1024
 #define SNODE_CHILD_ALLOC_INCREMENT 128

@@ -4,7 +4,7 @@
 #include <strings.h>
 #include <unistd.h>
 #include "symtab.h"
-#include "config.h"
+#include "util_config.h"
 
 int symbol_init( symbol_t *obj_in, char *name_in, int len_in )
 {

@@ -4,7 +4,7 @@
 #include <math.h>
 #include "parse.h"
 #include "symtab.h"
-#include "config.h"
+#include "util_config.h"
 
 #define CFGREAD_BUFFER_SIZE 8192
 #define CFGREAD_TOKEN_BUFFER_SIZE 4096
