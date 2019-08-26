@@ -10,9 +10,9 @@ typedef struct
 {
 	void *start;	///< Pointer to first element
 	void *pointer;	///< The start of allocated memory
-	int step;	///< The size (in bytes) of an element
-	int size;	///< The number of elements stored
-	int alloc;	///< The number of elements allocated
+	int step;	    ///< The size (in bytes) of an element
+	int size;	    ///< The number of elements stored
+	int alloc;	    ///< The number of elements allocated
 } list_t;
 
 typedef char byte_t;
