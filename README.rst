@@ -1,5 +1,3 @@
-# util
-
 Utility Library
 ===============
 
