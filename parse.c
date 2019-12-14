@@ -250,9 +250,9 @@ int parse_read_ranges( char *str_in, int ***range_out )
     for(i=0;i<cnfr;i++)
     {
         if( range[i][1] == range[i][0] )
-            fprintf( stderr, "%ld ", range[i][0] );
+            fprintf( stderr, "%d ", range[i][0] );
         else
-            fprintf( stderr, "%ld-%ld ", range[i][0], range[i][1] );
+            fprintf( stderr, "%d-%d ", range[i][0], range[i][1] );
     }
 
     /* Return the number of ranges and values */

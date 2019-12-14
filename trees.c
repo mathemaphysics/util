@@ -1259,11 +1259,19 @@ int bstree_free( bstree_t *tree_in )
 	return 0;
 }
 
+/**
+ * FIXME: The addresses printed with %x specifier
+ * here need to be generalized in terms of size, i.e.
+ * depending on the system, the pointer size is
+ * different
+ */
 void bstree_info( bstree_t *tree_in )
 {
-	printf( "%x: start = %x root = %d step = %d size = %d alloc = %d compf = %x min = %d max = %d",
-			tree_in, tree_in->start, tree_in->root, tree_in->step, tree_in->size,
-			tree_in->alloc, tree_in->compf, tree_in->min, tree_in->max );
+	printf( "%x: start = %x root = %ld step = %ld size = %ld alloc = %ld compf = %x min = %ld max = %ld",
+			(unsigned int)tree_in, (unsigned int)tree_in->start, tree_in->root,
+			tree_in->step, tree_in->size, tree_in->alloc,
+			(unsigned int)tree_in->compf,
+			tree_in->min, tree_in->max );
 }
 
 int bstree_avail( bstree_t *tree_in, long *node_out )

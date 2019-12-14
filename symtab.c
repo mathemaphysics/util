@@ -132,10 +132,10 @@ void symtab_print( symtab_t *obj_in )
                 mx = m;
         }
     }
-    sprintf( fmt, " %%-%ds   %%-%ds\n", nx * p, mx * p );
+    sprintf( fmt, " %%-%lds   %%-%lds\n", nx * p, mx * p );
     fprintf( stderr, fmt, "Variable", "Value" );
     fprintf( stderr, fmt, "========", "=====" );
-    sprintf( fmt, " %%-%ds   %%-%ds\n", nx * p, mx * p );
+    sprintf( fmt, " %%-%lds   %%-%lds\n", nx * p, mx * p );
     for(i=0;i<obj_in->size;i++)
         if( obj_in->occs[i] == 1 )
             fprintf( stderr, fmt, obj_in->syms[i].name, obj_in->syms[i].data );
