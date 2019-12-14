@@ -5,6 +5,6 @@ Utility Library
     :target: https://travis-ci.org/mathemaphysics/util
     
 This is just a simple library full of a wide range of items involving
-iterators for making combinations and/or permutation to data structures
-such as heaps and red-black trees, to routines for simple string manipulation
+iterators for making combinations and/or permutations to data structures
+such as heaps and red-black trees and routines for simple string manipulation
 and symbol tables.
