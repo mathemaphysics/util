@@ -1,0 +1,15 @@
+language: c
+compiler: gcc
+dist: bionic
+
+before_install:
+    - sudo apt-get update -y
+
+install:
+    - sudo apt-get install cmake
+
+script:
+    - mkdir build && cd build
+    - cmake ..
+    - make
+
