@@ -15,7 +15,7 @@
  * @param str_in The string of interest
  * @return Position of the first non-whitespace character
  */
-inline int parse_get_start( char *str_in )
+int parse_get_start( char *str_in )
 {
     int i;
     for(i=0;i<MAX_WHITE_SPACE;i++)
@@ -31,7 +31,7 @@ inline int parse_get_start( char *str_in )
  * @param sep_in String of separators; see if chr_in is in here
  * @return Returns 1 if chr_in is in sep_in, 0 otherwise
  */
-inline int parse_contains_char( char chr_in, char *sep_in )
+int parse_contains_char( char chr_in, char *sep_in )
 {
     int i = 0;
     while( sep_in[i] != '\0' )
